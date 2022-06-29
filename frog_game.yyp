@@ -1,5 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"spr_frog_hit","path":"sprites/spr_frog_hit/spr_frog_hit.yy",},"order":1,},
+    {"id":{"name":"spr_frog_walk","path":"sprites/spr_frog_walk/spr_frog_walk.yy",},"order":5,},
+    {"id":{"name":"spr_frog_jumpAnti","path":"sprites/spr_frog_jumpAnti/spr_frog_jumpAnti.yy",},"order":4,},
+    {"id":{"name":"spr_frog_falling","path":"sprites/spr_frog_falling/spr_frog_falling.yy",},"order":0,},
+    {"id":{"name":"spr_frog_jump","path":"sprites/spr_frog_jump/spr_frog_jump.yy",},"order":3,},
+    {"id":{"name":"spr_frog_idle","path":"sprites/spr_frog_idle/spr_frog_idle.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -38,6 +44,7 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Frog.yy","order":6,"resourceVersion":"1.0","name":"Frog","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -47,7 +54,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.5.1.16",
+    "IDEVersion": "2022.3.0.625",
   },
   "resourceVersion": "1.5",
   "name": "frog_game",
