@@ -6,11 +6,11 @@
   "sequence": {
     "length": 1.0,
     "playback": 1,
-    "spriteId": {"name":"grimyWaterBackdrop","path":"sprites/grimyWaterBackdrop/grimyWaterBackdrop.yy",},
+    "spriteId": {"name":"spr_envi_grimyWaterBackdrop","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},
     "playbackSpeed": 0.0,
     "tracks": [
       {"name":"frames","keyframes":{"Keyframes":[
-            {"id":"a50fe4d4-029f-497a-96e8-ef060302a79f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","path":"sprites/grimyWaterBackdrop/grimyWaterBackdrop.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a50fe4d4-029f-497a-96e8-ef060302a79f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"spriteId":null,"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -33,9 +33,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"grimyWaterBackdrop","path":"sprites/grimyWaterBackdrop/grimyWaterBackdrop.yy",},
+    "parent": {"name":"spr_envi_grimyWaterBackdrop","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},
     "resourceVersion": "1.4",
-    "name": "grimyWaterBackdrop",
+    "name": "spr_envi_grimyWaterBackdrop",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -60,9 +60,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","path":"sprites/grimyWaterBackdrop/grimyWaterBackdrop.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","path":"sprites/grimyWaterBackdrop/grimyWaterBackdrop.yy",},"LayerId":{"name":"9d9b891d-ace4-4cb6-8128-22491798de26","path":"sprites/grimyWaterBackdrop/grimyWaterBackdrop.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"grimyWaterBackdrop","path":"sprites/grimyWaterBackdrop/grimyWaterBackdrop.yy",},"resourceVersion":"1.0","name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},"LayerId":{"name":"9d9b891d-ace4-4cb6-8128-22491798de26","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_envi_grimyWaterBackdrop","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},"resourceVersion":"1.0","name":"2f376a3e-b3ec-41f8-906c-344fe7f635f4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9d9b891d-ace4-4cb6-8128-22491798de26","tags":[],"resourceType":"GMImageLayer",},
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Environment.yy",
   },
   "resourceVersion": "1.0",
-  "name": "grimyWaterBackdrop",
+  "name": "spr_envi_grimyWaterBackdrop",
   "tags": [],
   "resourceType": "GMSprite",
 }
