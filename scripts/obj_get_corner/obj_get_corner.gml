@@ -5,21 +5,38 @@ function obj_get_corner(obj, corner){
 	var offset_x = obj.sprite_index.sprite_xoffset;
 	var offset_y = obj.sprite_index.sprite_yoffset;
 	var width = obj.sprite_index.sprite_width;
-	var height = obj.sprite_index.sprite_width;
+	var height = obj.sprite_index.sprite_height;
 	
 	var corner_position = [0,0];
+	
+	show_debug_message(scale_y);
+	show_debug_message(offset_y);
+	show_debug_message(height);
 	
 	switch (corner) {
 		case corners.top_left:
 			if scale_x >= 0 {
 				corner_position[0] = obj.x - (offset_x);
 			} else {
-				corner_position[0] = obj.x + (offset_x) - ( width);
+				corner_position[0] = obj.x - (offset_x) + width;
 			}
 			if scale_y >= 0 {
 				corner_position[1] = obj.y - (offset_y);
 			} else {
-				corner_position[1] = obj.y + (offset_y) - (height);
+				corner_position[1] = obj.y - (offset_y) + (height);
+			}
+			return corner_position;
+			break;
+		case corners.top_right:
+			if scale_x >= 0 {
+				corner_position[0] = obj.x - offset_x + width;
+			} else {
+				corner_position[0] = obj.x - offset_x;
+			}
+			if scale_y >= 0 {
+				corner_position[1] = obj.y - (offset_y);
+			} else {
+				corner_position[1] = obj.y - (offset_y) + (height);
 			}
 			return corner_position;
 			break;
@@ -27,37 +44,25 @@ function obj_get_corner(obj, corner){
 			if scale_x >= 0 {
 				corner_position[0] = obj.x - (offset_x);
 			} else {
-				corner_position[0] = obj.x + (offset_x) - (width);
+				corner_position[0] = obj.x - (offset_x) + width;
 			}
 			if scale_y >= 0 {
 				corner_position[1] = obj.y - (offset_y) + (height);
 			} else {
-				corner_position[1] = obj.y + (offset_y);
+				corner_position[1] = obj.y - (offset_y);
 			}
 			return corner_position;
 			break;
-		case corners.top_right:
-			if scale_x >= 0 {
-				corner_position[0] = obj.x - (offset_x) + (width);
-			} else {
-				corner_position[0] = obj.x + (offset_x);
-			}
-			if scale_y >= 0 {
-				corner_position[1] = obj.y - (offset_y);
-			} else {
-				corner_position[1] = obj.y + (offset_y) - (height);
-			}
-			return corner_position;
 		case corners.bottom_right:
 			if scale_x >= 0 {
-				corner_position[0] = obj.x - (offset_x) + (width);
+				corner_position[0] = obj.x - offset_x + width;
 			} else {
-				corner_position[0] = obj.x + (offset_x);
+				corner_position[0] = obj.x - offset_x;
 			}
 			if scale_y >= 0 {
 				corner_position[1] = obj.y - (offset_y) + (height);
 			} else {
-				corner_position[1] = obj.y + (offset_y);
+				corner_position[1] = obj.y - (offset_y);
 			}
 			return corner_position;
 			break;
