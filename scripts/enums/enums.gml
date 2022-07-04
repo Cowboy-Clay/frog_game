@@ -10,3 +10,10 @@ enum corners {
 	bottom_left,
 	bottom_right,
 }
+
+enum animation_type {
+	first_frame,
+	hold,
+	loop,
+	loop_reverse,
+}
