@@ -82,11 +82,11 @@
     {"folderPath":"folders/Scripts/Physics.yy","order":1,"resourceVersion":"1.0","name":"Physics","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Sprite_Helpers.yy","order":2,"resourceVersion":"1.0","name":"Sprite_Helpers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Animation.yy","order":4,"resourceVersion":"1.0","name":"Animation","tags":[],"resourceType":"GMFolder",},
-<<<<<<< HEAD
 
-=======
+
+
     {"folderPath":"folders/Scripts/Animation/Animation_Declerations.yy","order":1,"resourceVersion":"1.0","name":"Animation_Declerations","tags":[],"resourceType":"GMFolder",},
->>>>>>> origin/Physics
+
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
