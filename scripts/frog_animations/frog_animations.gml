@@ -1,0 +1,1 @@
+// global.animation_frog_idle = [sprite_ref, animation_type.loop, fps];
