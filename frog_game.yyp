@@ -1,8 +1,18 @@
 {
   "resources": [
+    {"id":{"name":"action_walk","path":"scripts/action_walk/action_walk.yy",},"order":7,},
+    {"id":{"name":"edge_get_location","path":"scripts/edge_get_location/edge_get_location.yy",},"order":0,},
+    {"id":{"name":"Gravity","path":"scripts/Gravity/Gravity.yy",},"order":1,},
+    {"id":{"name":"Friction","path":"scripts/Friction/Friction.yy",},"order":0,},
     {"id":{"name":"obj_frog","path":"objects/obj_frog/obj_frog.yy",},"order":0,},
+    {"id":{"name":"instance_nearest_mask","path":"scripts/instance_nearest_mask/instance_nearest_mask.yy",},"order":1,},
+    {"id":{"name":"on_ground","path":"scripts/on_ground/on_ground.yy",},"order":2,},
     {"id":{"name":"spr_frog","path":"sprites/spr_frog/spr_frog.yy",},"order":0,},
+    {"id":{"name":"vector_away_normal","path":"scripts/vector_away_normal/vector_away_normal.yy",},"order":3,},
     {"id":{"name":"enums","path":"scripts/enums/enums.yy",},"order":3,},
+    {"id":{"name":"action_start_jump","path":"scripts/action_start_jump/action_start_jump.yy",},"order":6,},
+    {"id":{"name":"action_jumping","path":"scripts/action_jumping/action_jumping.yy",},"order":5,},
+    {"id":{"name":"place_meeting_mask","path":"scripts/place_meeting_mask/place_meeting_mask.yy",},"order":2,},
     {"id":{"name":"obj_get_corner","path":"scripts/obj_get_corner/obj_get_corner.yy",},"order":0,},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
@@ -46,6 +56,7 @@
     {"folderPath":"folders/Sprites/Placeholders.yy","order":1,"resourceVersion":"1.0","name":"Placeholders","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Physics.yy","order":1,"resourceVersion":"1.0","name":"Physics","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Sprite_Helpers.yy","order":2,"resourceVersion":"1.0","name":"Sprite_Helpers","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Helpers.yy","order":4,"resourceVersion":"1.0","name":"Helpers","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -55,7 +66,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.3.0.625",
+    "IDEVersion": "2022.6.0.23",
   },
   "resourceVersion": "1.5",
   "name": "frog_game",
