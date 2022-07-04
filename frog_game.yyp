@@ -1,6 +1,6 @@
 {
   "resources": [
-<<<<<<< HEAD
+
     {"id":{"name":"spr_frog_hit","path":"sprites/spr_frog_hit/spr_frog_hit.yy",},"order":1,},
     {"id":{"name":"spr_envi_grimyWater","path":"sprites/spr_envi_grimyWater/spr_envi_grimyWater.yy",},"order":1,},
     {"id":{"name":"spr_frog_walk","path":"sprites/spr_frog_walk/spr_frog_walk.yy",},"order":5,},
@@ -22,7 +22,7 @@
     {"id":{"name":"spr_frog_idle","path":"sprites/spr_frog_idle/spr_frog_idle.yy",},"order":2,},
     {"id":{"name":"tlst_dirt","path":"sprites/tlst_dirt/tlst_dirt.yy",},"order":0,},
     {"id":{"name":"spr_eggDamaged4_idle","path":"sprites/spr_eggDamaged4_idle/spr_eggDamaged4_idle.yy",},"order":1,},
-=======
+
     {"id":{"name":"obj_frog","path":"objects/obj_frog/obj_frog.yy",},"order":0,},
     {"id":{"name":"spr_frog","path":"sprites/spr_frog/spr_frog.yy",},"order":0,},
     {"id":{"name":"enums","path":"scripts/enums/enums.yy",},"order":3,},
@@ -30,7 +30,7 @@
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"order":1,},
     {"id":{"name":"animation_play","path":"scripts/animation_play/animation_play.yy",},"order":0,},
     {"id":{"name":"constants","path":"scripts/constants/constants.yy",},"order":5,},
->>>>>>> origin/Physics
+
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -69,19 +69,19 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
-<<<<<<< HEAD
+
     {"folderPath":"folders/Sprites/Frog.yy","order":6,"resourceVersion":"1.0","name":"Frog","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Frog/Eggs.yy","order":6,"resourceVersion":"1.0","name":"Eggs","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Frog/Eggs/Idle.yy","order":5,"resourceVersion":"1.0","name":"Idle","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Frog/Eggs/Damaged.yy","order":6,"resourceVersion":"1.0","name":"Damaged","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Frog/Eggs/Damaged/Idle.yy","order":1,"resourceVersion":"1.0","name":"Idle","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Environment.yy","order":7,"resourceVersion":"1.0","name":"Environment","tags":[],"resourceType":"GMFolder",},
-=======
+
     {"folderPath":"folders/Sprites/Placeholders.yy","order":1,"resourceVersion":"1.0","name":"Placeholders","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Physics.yy","order":1,"resourceVersion":"1.0","name":"Physics","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Sprite_Helpers.yy","order":2,"resourceVersion":"1.0","name":"Sprite_Helpers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Animation.yy","order":4,"resourceVersion":"1.0","name":"Animation","tags":[],"resourceType":"GMFolder",},
->>>>>>> origin/Physics
+
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
