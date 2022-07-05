@@ -1,3 +1,1 @@
-animation_type_current = animation_type.loop;
-animation_fps_current = 60;
-animation_frame_counter = 0;
+animation_set(global.animation_frog_idle);
