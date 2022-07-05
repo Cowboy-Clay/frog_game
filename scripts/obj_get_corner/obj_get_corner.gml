@@ -2,16 +2,16 @@
 function obj_get_corner(obj, corner){
 	var scale_x = obj.image_xscale;
 	var scale_y = obj.image_yscale;
-	var offset_x = obj.sprite_index.sprite_xoffset;
-	var offset_y = obj.sprite_index.sprite_yoffset;
-	var width = obj.sprite_index.sprite_width;
-	var height = obj.sprite_index.sprite_height;
+	var offset_x = obj.sprite_xoffset;
+	var offset_y = obj.sprite_yoffset;
+	var width = obj.sprite_width;
+	var height = obj.sprite_height;
 	
 	var corner_position = [0,0];
 	
-	show_debug_message(scale_y);
-	show_debug_message(offset_y);
-	show_debug_message(height);
+	//show_debug_message(scale_y);
+	//show_debug_message(offset_y);
+	//show_debug_message(height);
 	
 	switch (corner) {
 		case corners.top_left:
