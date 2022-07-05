@@ -1,8 +1,20 @@
 {
   "resources": [
+    {"id":{"name":"action_walk","path":"scripts/action_walk/action_walk.yy",},"order":7,},
+    {"id":{"name":"edge_get_location","path":"scripts/edge_get_location/edge_get_location.yy",},"order":0,},
+    {"id":{"name":"Gravity","path":"scripts/Gravity/Gravity.yy",},"order":1,},
+    {"id":{"name":"Friction","path":"scripts/Friction/Friction.yy",},"order":0,},
     {"id":{"name":"obj_frog","path":"objects/obj_frog/obj_frog.yy",},"order":0,},
+    {"id":{"name":"instance_nearest_mask","path":"scripts/instance_nearest_mask/instance_nearest_mask.yy",},"order":1,},
+    {"id":{"name":"on_ground","path":"scripts/on_ground/on_ground.yy",},"order":2,},
     {"id":{"name":"spr_frog","path":"sprites/spr_frog/spr_frog.yy",},"order":0,},
+    {"id":{"name":"collision_check_edge","path":"scripts/collision_check_edge/collision_check_edge.yy",},"order":3,},
+    {"id":{"name":"vector_away_normal","path":"scripts/vector_away_normal/vector_away_normal.yy",},"order":3,},
     {"id":{"name":"enums","path":"scripts/enums/enums.yy",},"order":3,},
+    {"id":{"name":"action_start_jump","path":"scripts/action_start_jump/action_start_jump.yy",},"order":6,},
+    {"id":{"name":"collision_line_mask","path":"scripts/collision_line_mask/collision_line_mask.yy",},"order":4,},
+    {"id":{"name":"action_jumping","path":"scripts/action_jumping/action_jumping.yy",},"order":5,},
+    {"id":{"name":"place_meeting_mask","path":"scripts/place_meeting_mask/place_meeting_mask.yy",},"order":2,},
     {"id":{"name":"obj_get_corner","path":"scripts/obj_get_corner/obj_get_corner.yy",},"order":0,},
     {"id":{"name":"animation_set","path":"scripts/animation_set/animation_set.yy",},"order":2,},
     {"id":{"name":"frog_animations","path":"scripts/frog_animations/frog_animations.yy",},"order":0,},
@@ -52,6 +64,7 @@
     {"folderPath":"folders/Scripts/Sprite_Helpers.yy","order":2,"resourceVersion":"1.0","name":"Sprite_Helpers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Animation.yy","order":4,"resourceVersion":"1.0","name":"Animation","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Animation/Animation_Declerations.yy","order":1,"resourceVersion":"1.0","name":"Animation_Declerations","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Helpers.yy","order":4,"resourceVersion":"1.0","name":"Helpers","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -61,7 +74,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.5.1.16",
+    "IDEVersion": "2022.6.0.23",
   },
   "resourceVersion": "1.5",
   "name": "frog_game",
