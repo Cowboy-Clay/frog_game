@@ -1,4 +1,4 @@
-function animation_set(animation_to_use, fps_to_use, animation_type_to_use){
+function animation_set(animation_array){
 	// create variables if they do not exist
 	if variable_instance_exists(id, "animation_type_current") == false {
 		animation_type_current = animation_type.first_frame;
@@ -10,14 +10,14 @@ function animation_set(animation_to_use, fps_to_use, animation_type_to_use){
 		animation_frame_counter = 0;
 	}
 	
-	if sprite_index == animation_to_use &&
-	animation_fps_current == fps_to_use &&
-	animation_type_current == animation_type_to_use {
+	if sprite_index == animation_array[0] &&
+	animation_fps_current == animation_array[2] &&
+	animation_type_current == animation_array[1] {
 		return;
 	}
 	
-	sprite_index = animation_to_use;
-	animation_fps_current = fps_to_use;
-	animation_type_current = animation_type_to_use;
+	sprite_index = animation_array[0];
+	animation_fps_current = animation_array[2];
+	animation_type_current = animation_array[1];
 	animation_frame_counter = 0;
 }
