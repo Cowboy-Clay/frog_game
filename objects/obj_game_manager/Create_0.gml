@@ -6,3 +6,7 @@ if !variable_global_exists("game_manager") {
 } else {
 	if global.game_manager != id instance_destroy(id);
 }
+
+#region Debugging
+global.show_collision_masks = true;
+#endregion
