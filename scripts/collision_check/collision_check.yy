@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Physics.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Gravity",
+  "name": "collision_check",
   "tags": [],
   "resourceType": "GMScript",
 }

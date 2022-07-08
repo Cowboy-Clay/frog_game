@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Physics",
-    "path": "folders/Scripts/Physics.yy",
+    "name": "Input",
+    "path": "folders/Scripts/Input.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Friction",
+  "name": "gamepad_button_check_anypad",
   "tags": [],
   "resourceType": "GMScript",
 }
