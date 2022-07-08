@@ -1,0 +1,1 @@
+#macro game_fps 60
