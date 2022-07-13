@@ -1,13 +1,7 @@
 function eggs_draw(){
 	// Variables used in drawing the eggs
 	// The offset of each egg
-	var egg_offsets = [
-		[0,0],
-		[0,0],
-		[0,0],
-		[0,0],
-		[0,0],
-	];
+	var egg_offsets = eggs_draw_get_offsets();
 	// Healthy egg sprite
 	var egg_sprite = spr_egg;
 	// Damaged egg sprite

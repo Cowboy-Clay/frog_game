@@ -24,8 +24,10 @@ function walk() {
 	if !grounded return;
 	if input_check(input_action.left) && !input_check(input_action.right){
 		hspeed -= walk_acceleration;
+		image_xscale = -1;
 	} else if input_check(input_action.right) && !input_check(input_action.left) {
 		hspeed += walk_acceleration;
+		image_xscale = 1;
 	}
 }
 

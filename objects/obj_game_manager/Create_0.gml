@@ -9,7 +9,11 @@ if !variable_global_exists("game_manager") {
 
 #region Egg status
 enum egg_status {healthy, damaged, missing};
-global.egg_statuses = [egg_status.healthy,egg_status.healthy,egg_status.healthy,egg_status.healthy,egg_status.healthy];
+global.egg_statuses = [egg_status.healthy,
+					   egg_status.healthy,
+					   egg_status.healthy,
+					   egg_status.healthy,
+					   egg_status.healthy];
 #endregion
 
 #region Debugging

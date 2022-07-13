@@ -55,6 +55,7 @@
     {"id":{"name":"gamepad_axis_check","path":"scripts/gamepad_axis_check/gamepad_axis_check.yy",},"order":0,},
     {"id":{"name":"input_definitions","path":"scripts/input_definitions/input_definitions.yy",},"order":9,},
     {"id":{"name":"place_meeting_mask","path":"scripts/place_meeting_mask/place_meeting_mask.yy",},"order":2,},
+    {"id":{"name":"eggs_draw_get_offsets","path":"scripts/eggs_draw_get_offsets/eggs_draw_get_offsets.yy",},"order":1,},
     {"id":{"name":"obj_get_corner","path":"scripts/obj_get_corner/obj_get_corner.yy",},"order":0,},
     {"id":{"name":"spr_tile_collision","path":"sprites/spr_tile_collision/spr_tile_collision.yy",},"order":4,},
     {"id":{"name":"animation_set","path":"scripts/animation_set/animation_set.yy",},"order":2,},
