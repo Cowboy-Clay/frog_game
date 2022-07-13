@@ -5,7 +5,7 @@ physics_gravity(0.1,10);
 
 walk();
 physics_friction(grounded ? .8 : 0);
-walk_apply_limit();
+if grounded walk_apply_limit();
 
 if input_check_pressed(input_action.jump) && jumpTimer == 0 {
 	show_debug_message("Starting jump charge");
