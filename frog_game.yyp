@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_frog_tongue","path":"sprites/spr_frog_tongue/spr_frog_tongue.yy",},"order":6,},
     {"id":{"name":"input_create_manager","path":"scripts/input_create_manager/input_create_manager.yy",},"order":8,},
     {"id":{"name":"action_walk","path":"scripts/action_walk/action_walk.yy",},"order":7,},
     {"id":{"name":"obj_tilemap_collision_spawner","path":"objects/obj_tilemap_collision_spawner/obj_tilemap_collision_spawner.yy",},"order":0,},
