@@ -17,3 +17,9 @@ global.animation_frog_hit = [spr_frog_hit, animation_type.hold, 10];
 
 //FALLING
 global.animation_frog_falling = [spr_frog_falling, animation_type.hold, 10];
+
+//LICK
+global.animation_frog_lick = [spr_frog_lick, animation_type.hold, 10];
+
+//LICK FALL
+global.animation_frog_lickFall = [spr_frog_lickFall, animation_type.hold, 10];
