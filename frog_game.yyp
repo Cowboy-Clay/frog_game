@@ -24,6 +24,7 @@
     {"id":{"name":"spr_frog_jumpAnti","path":"sprites/spr_frog_jumpAnti/spr_frog_jumpAnti.yy",},"order":4,},
     {"id":{"name":"spr_frog_falling","path":"sprites/spr_frog_falling/spr_frog_falling.yy",},"order":0,},
     {"id":{"name":"input_check_pressed","path":"scripts/input_check_pressed/input_check_pressed.yy",},"order":5,},
+    {"id":{"name":"JordanTestRoom","path":"rooms/JordanTestRoom/JordanTestRoom.yy",},"order":1,},
     {"id":{"name":"collision_check","path":"scripts/collision_check/collision_check.yy",},"order":6,},
     {"id":{"name":"spr_frog_lick","path":"sprites/spr_frog_lick/spr_frog_lick.yy",},"order":9,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":5,},
@@ -90,6 +91,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"JordanTestRoom","path":"rooms/JordanTestRoom/JordanTestRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [

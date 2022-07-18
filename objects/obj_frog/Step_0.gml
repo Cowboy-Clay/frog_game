@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-physics_gravity(0.1,10);
+physics_gravity(0.2,10);
 
 walk();
-physics_friction(grounded ? .8 : 0);
+physics_friction(grounded ? .5 : 0);
 if grounded walk_apply_limit();
 
 if input_check_pressed(input_action.jump) && jumpTimer == 0 {

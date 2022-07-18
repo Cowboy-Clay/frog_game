@@ -3,15 +3,15 @@
 collision_mask = [obj_tile_collision];
 
 walk_acceleration = 2;
-walk_speed_max = 1;
+walk_speed_max = 2;
 
 jumpTimer = 0; // Frame counter to determine how long the player is preparing their jump
 global.player_minJumpWindup = 3; // the min # of frames the player can prepare a jump
 global.player_maxJumpWindup = 30; // the max # of frames the player can prepare a jump
-global.player_minVertJumpForce = 2; // min vertical force applied by a jump
-global.player_maxVertJumpForce = 3; // max vertical force applied by a jump
-global.player_minHoriJumpForce = 2; // min horizontal force applied by a jump
-global.player_maxHoriJumpForce = 5; // max horizontal force applied by a jump
+global.player_minVertJumpForce = 3.5; // min vertical force applied by a jump
+global.player_maxVertJumpForce = 5.5; // max vertical force applied by a jump
+global.player_minHoriJumpForce = 3.5; // min horizontal force applied by a jump
+global.player_maxHoriJumpForce = 4; // max horizontal force applied by a jump
 
 // Set default animation
 animation_set(global.animation_frog_idle);
