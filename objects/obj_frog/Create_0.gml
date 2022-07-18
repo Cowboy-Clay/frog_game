@@ -5,6 +5,7 @@ collision_mask = [obj_tile_collision];
 walk_acceleration = 2;
 walk_speed_max = 1;
 
+// Jump stuff
 jump_timer = 0; // Frame counter to determine how long the player is preparing their jump
 #macro player_jump_windup_min 3
 #macro player_jump_windup_max 30
@@ -13,6 +14,16 @@ jump_timer = 0; // Frame counter to determine how long the player is preparing t
 #macro player_jump_force_horizontal_min 2
 #macro player_jump_force_horizontal_max 5
 #macro jump_buffer_length 13
+
+// Tongue stuff
+tongue_reticle_angle = 0;
+#macro player_tongue_angle_acceloration -4.9
+#macro player_tongue_reticle spr_placeholder_reticle
+#macro player_tongue_offset_x 13
+#macro player_tongue_offset_y 6
+#macro player_tongue_angle_min -88
+#macro player_tongue_angle_max 88
+#macro player_tongue_reticle_lerp_value 0.3
 
 // Set default animation
 animation_set(global.animation_frog_idle);
@@ -76,4 +87,21 @@ function PlayerJumpAnti()
     {
         GoToPlayerJump();
     }
+}
+
+function tongue_aim() {
+	if input_check(input_action.up) and not input_check(input_action.down) {
+		tongue_reticle_angle += player_tongue_angle_acceloration;
+	} else if input_check(input_action.down) and not input_check(input_action.up) {
+		tongue_reticle_angle -= player_tongue_angle_acceloration;
+	}
+	while tongue_reticle_angle >= 180 tongue_reticle_angle -= 360;
+	while tongue_reticle_angle < -180 tongue_reticle_angle += 360;
+	
+	if typeof(player_tongue_angle_min) == "number" {
+		tongue_reticle_angle = tongue_reticle_angle < player_tongue_angle_min ? player_tongue_angle_min : tongue_reticle_angle;
+	}
+	if typeof(player_tongue_angle_max) == "number" {
+		tongue_reticle_angle = tongue_reticle_angle > player_tongue_angle_max ? player_tongue_angle_max : tongue_reticle_angle;
+	}
 }
