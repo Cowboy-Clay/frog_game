@@ -3,16 +3,16 @@
 collision_mask = [obj_tile_collision];
 
 walk_acceleration = 2;
-walk_speed_max = 1;
+walk_speed_max = 2;
 
 // Jump stuff
 jump_timer = 0; // Frame counter to determine how long the player is preparing their jump
 #macro player_jump_windup_min 3
 #macro player_jump_windup_max 30
-#macro player_jump_force_vertical_min 2
-#macro player_jump_force_vertical_max 3
-#macro player_jump_force_horizontal_min 2
-#macro player_jump_force_horizontal_max 5
+#macro player_jump_force_vertical_min 3.5
+#macro player_jump_force_vertical_max 5.5
+#macro player_jump_force_horizontal_min 3.5
+#macro player_jump_force_horizontal_max 4
 #macro jump_buffer_length 13
 
 // Tongue stuff
