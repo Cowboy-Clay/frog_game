@@ -12,6 +12,7 @@ global.player_minVertJumpForce = 2; // min vertical force applied by a jump
 global.player_maxVertJumpForce = 3; // max vertical force applied by a jump
 global.player_minHoriJumpForce = 2; // min horizontal force applied by a jump
 global.player_maxHoriJumpForce = 5; // max horizontal force applied by a jump
+#macro jump_buffer_length 13
 
 // Set default animation
 animation_set(global.animation_frog_idle);
@@ -43,8 +44,10 @@ function animation_select() {
 
 function GoToPlayerJumpAnti()
 {
-	if !grounded return;
-    jumpTimer = 1;
+	if jumpTimer >= 0 jumpTimer = -1 * jump_buffer_length;
+	else jumpTimer ++;
+	if jumpTimer < 0 && grounded jumpTimer = 1;
+	show_debug_message(jumpTimer);
 }
 function GoToPlayerJump()
 {
