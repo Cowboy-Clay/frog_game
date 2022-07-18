@@ -18,6 +18,7 @@
     {"id":{"name":"spr_envi_grimyWaterBackdrop","path":"sprites/spr_envi_grimyWaterBackdrop/spr_envi_grimyWaterBackdrop.yy",},"order":2,},
     {"id":{"name":"egg_get_status","path":"scripts/egg_get_status/egg_get_status.yy",},"order":0,},
     {"id":{"name":"spr_envi_tombstone","path":"sprites/spr_envi_tombstone/spr_envi_tombstone.yy",},"order":3,},
+    {"id":{"name":"spr_bird_idle","path":"sprites/spr_bird_idle/spr_bird_idle.yy",},"order":1,},
     {"id":{"name":"collision_point_mask","path":"scripts/collision_point_mask/collision_point_mask.yy",},"order":7,},
     {"id":{"name":"Dirt_Tiles","path":"tilesets/Dirt_Tiles/Dirt_Tiles.yy",},"order":0,},
     {"id":{"name":"obj_input_manager","path":"objects/obj_input_manager/obj_input_manager.yy",},"order":0,},
