@@ -5,20 +5,20 @@ collision_mask = [obj_tile_collision];
 walk_acceleration = 2;
 walk_speed_max = 1;
 
-jumpTimer = 0; // Frame counter to determine how long the player is preparing their jump
-global.player_minJumpWindup = 3; // the min # of frames the player can prepare a jump
-global.player_maxJumpWindup = 30; // the max # of frames the player can prepare a jump
-global.player_minVertJumpForce = 2; // min vertical force applied by a jump
-global.player_maxVertJumpForce = 3; // max vertical force applied by a jump
-global.player_minHoriJumpForce = 2; // min horizontal force applied by a jump
-global.player_maxHoriJumpForce = 5; // max horizontal force applied by a jump
+jump_timer = 0; // Frame counter to determine how long the player is preparing their jump
+#macro player_jump_windup_min 3
+#macro player_jump_windup_max 30
+#macro player_jump_force_vertical_min 2
+#macro player_jump_force_vertical_max 3
+#macro player_jump_force_horizontal_min 2
+#macro player_jump_force_horizontal_max 5
 #macro jump_buffer_length 13
 
 // Set default animation
 animation_set(global.animation_frog_idle);
 
 function walk() {
-	if jumpTimer > 0 return;
+	if jump_timer > 0 return;
 	if variable_instance_exists(id, "grounded") == false {
 		grounded = collision_check_edge(x, y, mask_index, directions.down, collision_mask); 
 	}
@@ -44,35 +44,35 @@ function animation_select() {
 
 function GoToPlayerJumpAnti()
 {
-	if jumpTimer >= 0 jumpTimer = -1 * jump_buffer_length;
-	else jumpTimer ++;
-	if jumpTimer < 0 && grounded jumpTimer = 1;
-	show_debug_message(jumpTimer);
+	if jump_timer >= 0 jump_timer = -1 * jump_buffer_length;
+	else jump_timer ++;
+	if jump_timer < 0 && grounded jump_timer = 1;
+	show_debug_message(jump_timer);
 }
 function GoToPlayerJump()
 {
 	if !grounded return;
-    var l = jumpTimer - global.player_minJumpWindup;
-    l = l / (global.player_maxJumpWindup - global.player_minJumpWindup);
-    vspeed -= lerp(global.player_minVertJumpForce, global.player_maxVertJumpForce, l);
+    var l = jump_timer - player_jump_windup_min;
+    l = l / (player_jump_windup_max - player_jump_windup_min);
+    vspeed -= lerp(player_jump_force_vertical_min, player_jump_force_vertical_max, l);
     if input_check(input_action.right) && !input_check(input_action.left)
     {
-        hspeed = lerp(global.player_minHoriJumpForce, global.player_maxHoriJumpForce, l);
+        hspeed = lerp(player_jump_force_horizontal_min, player_jump_force_horizontal_max , l);
     }
     else if !input_check(input_action.right) && input_check(input_action.left)
     {
-        hspeed = -lerp(global.player_minHoriJumpForce, global.player_maxHoriJumpForce, l);
+        hspeed = -lerp(player_jump_force_horizontal_min, player_jump_force_horizontal_max, l);
     }
-	jumpTimer = 0;
+	jump_timer = 0;
 }
 function PlayerJumpAnti()
 {
 	if !grounded {
-		jumpTimer = 0;
+		jump_timer = 0;
 		return;
 	}
-    jumpTimer += 1;
-    if jumpTimer > global.player_maxJumpWindup || (jumpTimer > global.player_minJumpWindup && keyboard_check(ord("X")) == false)
+    jump_timer += 1;
+    if jump_timer > player_jump_windup_max || (jump_timer > player_jump_windup_min && keyboard_check(ord("X")) == false)
     {
         GoToPlayerJump();
     }

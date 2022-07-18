@@ -9,20 +9,20 @@ if grounded walk_apply_limit();
 
 // Jump logic
 // If you are trying to start a jump
-if (input_check_pressed(input_action.jump) && jumpTimer == 0) || jumpTimer < 0{
+if (input_check_pressed(input_action.jump) && jump_timer == 0) || jump_timer < 0{
 	show_debug_message("Starting jump charge");
 	GoToPlayerJumpAnti();
 } 
 // else if a jump is already being processed
-else if jumpTimer > 0 {
-	if (input_check(input_action.jump) == false && jumpTimer > global.player_minJumpWindup) || ( jumpTimer > global.player_maxJumpWindup) {
+else if jump_timer > 0 {
+	if (input_check(input_action.jump) == false && jump_timer > player_jump_windup_min) || ( jump_timer > player_jump_windup_max) {
 		GoToPlayerJump();
 	} else {
 		PlayerJumpAnti();
 	}
 }
 
-if jumpTimer > 0 {
+if jump_timer > 0 {
 	animation_set(global.animation_frog_jumpAnti);
 }
 if !grounded {
@@ -30,4 +30,4 @@ if !grounded {
 	else animation_set(global.animation_frog_jump);
 }
 if grounded && abs(hspeed) > 0.3 animation_set(global.animation_frog_walk);
-if grounded && jumpTimer == 0 && abs(hspeed) < 0.3 && abs(vspeed) < 0.3 animation_set(global.animation_frog_idle);
+if grounded && jump_timer == 0 && abs(hspeed) < 0.3 && abs(vspeed) < 0.3 animation_set(global.animation_frog_idle);
