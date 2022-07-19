@@ -29,6 +29,7 @@ tongue_reticle_angle = 0;
 #macro player_tongue_length_max 100
 #macro player_tongue_frames_extend 18
 #macro player_tongue_frames_retract 6
+#macro player_tongue_force 4
 tongue_timer = 0;
 
 // Set default animation
@@ -117,15 +118,32 @@ function tongue_fire() {
 	if tongue_timer == 0 and input_check_released(input_action.attack) {
 		tongue_timer = 1;
 	}
-	if tongue_timer > 0 tongue_timer ++;
-	
+	if tongue_timer > 0 {
+		var xx = x + (image_xscale * player_tongue_offset_x);
+		var yy = y + (image_yscale * player_tongue_offset_y);
+		var l = tongue_get_length();
+		var a = tongue_reticle_angle;
+		if image_xscale < 0 {
+			if a == 0 a = 180;
+			else if a > 0 a = 180-a;
+			else if a  < 0 a =  -180 -a;
+		}
+		var dx = cos(a * pi / 180) * l;
+		var dy = sin(a * pi / 180) * l;
+		if collision_circle(xx+dx, yy+dy, 5, obj_tile_collision, true, true){
+			tongue_timer = 0;
+			hspeed = image_xscale > 0 ? cos(a * pi / 180) * player_tongue_force : cos(a * pi / 180) * player_tongue_force;
+			vspeed = sin(a * pi / 180) * player_tongue_force;
+			return;
+		}
+		tongue_timer ++;
+	}
 	if tongue_timer > player_tongue_frames_extend + player_tongue_frames_retract {
 		tongue_timer = 0;
 	}
 }
 
 function tongue_get_length() {
-	var ww = sprite_get_width(player_tongue_sprite);
 	var p = 1/1.;
 	if tongue_timer == 0 return 0;
 	else if tongue_timer > 0 and tongue_timer < player_tongue_frames_extend {
@@ -136,4 +154,5 @@ function tongue_get_length() {
 		var l = - player_tongue_length_max / player_tongue_frames_retract * (tongue_timer - player_tongue_frames_extend) + player_tongue_length_max;
 		return l;
 	}
+	return 0;
 }
