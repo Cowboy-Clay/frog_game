@@ -117,6 +117,7 @@ function tongue_aim() {
 function tongue_fire() {
 	if tongue_timer == 0 and input_check_released(input_action.attack) {
 		tongue_timer = 1;
+		if vspeed > 0 {vspeed = 0;physics_gravity(0.1,1);}
 	}
 	if tongue_timer > 0 {
 		var xx = x + (image_xscale * player_tongue_offset_x);

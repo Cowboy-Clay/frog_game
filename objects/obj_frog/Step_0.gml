@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-physics_gravity(0.2,10);
+if tongue_timer > 0 and tongue_timer < player_tongue_frames_extend{
+	physics_gravity(0.1,1);
+}else {
+	physics_gravity(0.2,10);
+}
 
 walk();
 physics_friction(grounded ? .5 : 0);
