@@ -2,8 +2,8 @@
 
 collision_mask = [obj_tile_collision];
 
-walk_acceleration = 2;
-walk_speed_max = 2;
+walk_acceleration = 1;
+walk_speed_max = 1.5;
 
 // Jump stuff
 jump_timer = 0; // Frame counter to determine how long the player is preparing their jump
