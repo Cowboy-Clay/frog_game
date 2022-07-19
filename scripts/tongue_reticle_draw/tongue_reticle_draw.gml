@@ -19,5 +19,6 @@ function tongue_reticle_draw(distance){
 	tongue_reticle_visible_position[0] = lerp(tongue_reticle_visible_position[0], target_position[0], player_tongue_reticle_lerp_value);
 	tongue_reticle_visible_position[1] = lerp(tongue_reticle_visible_position[1], target_position[1], player_tongue_reticle_lerp_value);
 	
-	draw_sprite(player_tongue_reticle,0,x+ tongue_reticle_visible_position[0], y + tongue_reticle_visible_position[1]);
+	if input_check(input_action.attack)
+		draw_sprite(player_tongue_reticle,0,x+ tongue_reticle_visible_position[0], y + tongue_reticle_visible_position[1]);
 }

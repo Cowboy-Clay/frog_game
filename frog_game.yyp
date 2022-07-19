@@ -38,6 +38,7 @@
     {"id":{"name":"spr_frog_jump","path":"sprites/spr_frog_jump/spr_frog_jump.yy",},"order":3,},
     {"id":{"name":"obj_cam_anchor","path":"objects/obj_cam_anchor/obj_cam_anchor.yy",},"order":1,},
     {"id":{"name":"spr_egg","path":"sprites/spr_egg/spr_egg.yy",},"order":2,},
+    {"id":{"name":"tongue_draw","path":"scripts/tongue_draw/tongue_draw.yy",},"order":3,},
     {"id":{"name":"tlst_dirt","path":"sprites/tlst_dirt/tlst_dirt.yy",},"order":0,},
     {"id":{"name":"obj_frog","path":"objects/obj_frog/obj_frog.yy",},"order":0,},
     {"id":{"name":"instance_nearest_mask","path":"scripts/instance_nearest_mask/instance_nearest_mask.yy",},"order":1,},
@@ -138,7 +139,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.3.0.625",
+    "IDEVersion": "2022.5.1.16",
   },
   "resourceVersion": "1.5",
   "name": "frog_game",

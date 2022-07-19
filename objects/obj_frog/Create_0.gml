@@ -25,6 +25,12 @@ tongue_reticle_angle = 0;
 #macro player_tongue_angle_max 88
 #macro player_tongue_reticle_lerp_value 0.3
 
+#macro player_tongue_sprite spr_frog_tongue
+#macro player_tongue_length_max 100
+#macro player_tongue_frames_extend 18
+#macro player_tongue_frames_retract 6
+tongue_timer = 0;
+
 // Set default animation
 animation_set(global.animation_frog_idle);
 
@@ -90,6 +96,7 @@ function PlayerJumpAnti()
 }
 
 function tongue_aim() {
+	if input_check(input_action.attack) == false or tongue_timer != 0 return;
 	if input_check(input_action.up) and not input_check(input_action.down) {
 		tongue_reticle_angle += player_tongue_angle_acceloration;
 	} else if input_check(input_action.down) and not input_check(input_action.up) {
@@ -103,5 +110,30 @@ function tongue_aim() {
 	}
 	if typeof(player_tongue_angle_max) == "number" {
 		tongue_reticle_angle = tongue_reticle_angle > player_tongue_angle_max ? player_tongue_angle_max : tongue_reticle_angle;
+	}
+}
+
+function tongue_fire() {
+	if tongue_timer == 0 and input_check_released(input_action.attack) {
+		tongue_timer = 1;
+	}
+	if tongue_timer > 0 tongue_timer ++;
+	
+	if tongue_timer > player_tongue_frames_extend + player_tongue_frames_retract {
+		tongue_timer = 0;
+	}
+}
+
+function tongue_get_length() {
+	var ww = sprite_get_width(player_tongue_sprite);
+	var p = 1/1.;
+	if tongue_timer == 0 return 0;
+	else if tongue_timer > 0 and tongue_timer < player_tongue_frames_extend {
+		var l = power(tongue_timer, p) * player_tongue_length_max / power(player_tongue_frames_extend, p);
+		return l;
+	} else if tongue_timer == player_tongue_frames_extend return player_tongue_length_max;
+	else if tongue_timer > player_tongue_frames_extend and tongue_timer < player_tongue_frames_extend + player_tongue_frames_retract {
+		var l = - player_tongue_length_max / player_tongue_frames_retract * (tongue_timer - player_tongue_frames_extend) + player_tongue_length_max;
+		return l;
 	}
 }
