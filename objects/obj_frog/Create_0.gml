@@ -20,7 +20,7 @@ tongue_reticle_angle = 0;
 tongue_ready = true;
 #macro player_tongue_angle_acceloration -10
 #macro player_tongue_reticle spr_placeholder_reticle
-#macro player_tongue_offset_x 13
+#macro player_tongue_offset_x 10
 #macro player_tongue_offset_y 6
 #macro player_tongue_angle_min -42
 #macro player_tongue_angle_max -42
@@ -58,7 +58,35 @@ function walk_apply_limit() {
 }
 
 function animation_select() {
+	if grounded {
+		if tongue_timer > 0 {
+			animation_set(global.animation_frog_lick);
+			return;
+		}
+		if jump_timer > 0 {
+			animation_set(global.animation_frog_jumpAnti);
+			return;
+		}
+		if abs(hspeed) > 0.05 {
+			animation_set(global.animation_frog_walk);
+			return;
+		}
+		animation_set(global.animation_frog_idle);
+		return;
+	}
 	
+	if vspeed < 0 {
+		animation_set(global.animation_frog_jump);
+		return;
+	}
+	if vspeed >= 0 {
+		if tongue_timer > 0 {
+			animation_set(global.animation_frog_lickFall);
+			return;
+		}
+		animation_set(global.animation_frog_falling);
+		return;
+	}
 }
 
 function GoToPlayerJumpAnti()
@@ -134,7 +162,11 @@ function tongue_fire() {
 		var dx = cos(a * pi / 180) * l;
 		var dy = sin(a * pi / 180) * l;
 		if collision_circle(xx+dx, yy+dy, 5, obj_tile_collision, true, true){
-			tongue_timer = 0;
+			var col_length = tongue_get_length();
+			tongue_timer ++;
+			while tongue_get_length() > col_length {
+				tongue_timer ++;
+			}
 			hspeed = image_xscale > 0 ? cos(a * pi / 180) * player_tongue_force : cos(a * pi / 180) * player_tongue_force;
 			vspeed = sin(a * pi / 180) * player_tongue_force;
 			return;
