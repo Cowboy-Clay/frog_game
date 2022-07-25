@@ -26,15 +26,5 @@ else if jump_timer > 0 {
 	}
 }
 
-if jump_timer > 0 {
-	animation_set(global.animation_frog_jumpAnti);
-}
-if !grounded {
-	if vspeed > 0 animation_set(global.animation_frog_falling);
-	else animation_set(global.animation_frog_jump);
-}
-if grounded && abs(hspeed) > 0.3 animation_set(global.animation_frog_walk);
-if grounded && jump_timer == 0 && abs(hspeed) < 0.3 && abs(vspeed) < 0.3 animation_set(global.animation_frog_idle);
-
 tongue_aim();
 tongue_fire();

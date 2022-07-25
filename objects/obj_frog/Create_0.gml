@@ -57,7 +57,35 @@ function walk_apply_limit() {
 }
 
 function animation_select() {
+	if grounded {
+		if tongue_timer > 0 {
+			animation_set(global.animation_frog_lick);
+			return;
+		}
+		if jump_timer > 0 {
+			animation_set(global.animation_frog_jumpAnti);
+			return;
+		}
+		if abs(hspeed) > 0.05 {
+			animation_set(global.animation_frog_walk);
+			return;
+		}
+		animation_set(global.animation_frog_idle);
+		return;
+	}
 	
+	if vspeed < 0 {
+		animation_set(global.animation_frog_jump);
+		return;
+	}
+	if vspeed >= 0 {
+		if tongue_timer > 0 {
+			animation_set(global.animation_frog_lickFall);
+			return;
+		}
+		animation_set(global.animation_frog_falling);
+		return;
+	}
 }
 
 function GoToPlayerJumpAnti()
