@@ -19,7 +19,7 @@ jump_timer = 0; // Frame counter to determine how long the player is preparing t
 tongue_reticle_angle = 0;
 #macro player_tongue_angle_acceloration -4.9
 #macro player_tongue_reticle spr_placeholder_reticle
-#macro player_tongue_offset_x 13
+#macro player_tongue_offset_x 10
 #macro player_tongue_offset_y 6
 #macro player_tongue_angle_min -88
 #macro player_tongue_angle_max 88
