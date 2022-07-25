@@ -21,6 +21,7 @@
     {"id":{"name":"spr_bird_idle","path":"sprites/spr_bird_idle/spr_bird_idle.yy",},"order":1,},
     {"id":{"name":"collision_point_mask","path":"scripts/collision_point_mask/collision_point_mask.yy",},"order":7,},
     {"id":{"name":"Dirt_Tiles","path":"tilesets/Dirt_Tiles/Dirt_Tiles.yy",},"order":0,},
+    {"id":{"name":"JordanTestRoom2","path":"rooms/JordanTestRoom2/JordanTestRoom2.yy",},"order":2,},
     {"id":{"name":"obj_input_manager","path":"objects/obj_input_manager/obj_input_manager.yy",},"order":0,},
     {"id":{"name":"tlst_water","path":"sprites/tlst_water/tlst_water.yy",},"order":4,},
     {"id":{"name":"obj_get_collision_mask_corner","path":"scripts/obj_get_collision_mask_corner/obj_get_collision_mask_corner.yy",},"order":1,},
@@ -97,6 +98,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"JordanTestRoom","path":"rooms/JordanTestRoom/JordanTestRoom.yy",},},
+    {"roomId":{"name":"JordanTestRoom2","path":"rooms/JordanTestRoom2/JordanTestRoom2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
@@ -139,7 +141,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.5.1.16",
+    "IDEVersion": "2022.3.0.625",
   },
   "resourceVersion": "1.5",
   "name": "frog_game",
