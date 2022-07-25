@@ -30,7 +30,15 @@ function collision_check(mask, x_bouncy, y_bouncy){
 			}
 		}
 		x = xx;
-		hspeed = x_bouncy == true ? -1*hspeed : 0;
+		if typeof(x_bouncy) == "number" {
+			hspeed = hspeed * -1 * x_bouncy;
+		} else if x_bouncy == false {
+			hspeed = 0;
+		} else if x_bouncy == true {
+			hspeed = hspeed *-1;
+		} else {
+			hspeed = 0;
+		}
 	}
 	
 	// Same as above but for y
