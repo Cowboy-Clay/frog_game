@@ -1,6 +1,6 @@
 //tilemap = layer_tilemap_get_id(tilemap_name);
 
-collision_mask = [obj_tile_collision];
+collision_mask = [obj_tile_collision, obj_goomba];
 
 walk_acceleration = 2;
 walk_speed_max = 2;
