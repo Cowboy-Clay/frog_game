@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 eggs_draw();
-tongue_reticle_draw(20);
+//tongue_reticle_draw(20);
 tongue_draw();
 
 //var c = obj_get_collision_mask_corner(id, corners.top_left);
