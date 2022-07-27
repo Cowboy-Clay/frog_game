@@ -46,6 +46,8 @@
   },
   "resourceVersion": "1.0",
   "name": "Dirt_Tiles",
-  "tags": [],
+  "tags": [
+    "ground",
+  ],
   "resourceType": "GMTileSet",
 }
