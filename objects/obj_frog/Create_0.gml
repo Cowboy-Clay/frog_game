@@ -1,6 +1,6 @@
 //tilemap = layer_tilemap_get_id(tilemap_name);
 
-collision_mask = [obj_tile_collision];
+collision_mask = [obj_tile_collision, obj_goomba];
 
 walk_acceleration = 1;
 walk_speed_max = 1.5;
@@ -76,6 +76,10 @@ function animation_select() {
 	}
 	
 	if vspeed < 0 {
+		if tongue_timer > 0 {
+			animation_set(global.animation_frog_lickFall);
+			return;
+		}
 		animation_set(global.animation_frog_jump);
 		return;
 	}
@@ -144,7 +148,7 @@ function tongue_aim() {
 }
 
 function tongue_fire() {
-	if tongue_timer == 0 and input_check_released(input_action.attack) && tongue_ready{
+	if tongue_timer == 0 and input_check_pressed(input_action.attack) && tongue_ready{
 		tongue_timer = 1;
 		tongue_ready = false;
 		if vspeed > 0 {vspeed = 0;physics_gravity(0.1,1);}

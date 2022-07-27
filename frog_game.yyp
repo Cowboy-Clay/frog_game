@@ -4,6 +4,7 @@
     {"id":{"name":"input_create_manager","path":"scripts/input_create_manager/input_create_manager.yy",},"order":8,},
     {"id":{"name":"action_walk","path":"scripts/action_walk/action_walk.yy",},"order":7,},
     {"id":{"name":"obj_tilemap_collision_spawner","path":"objects/obj_tilemap_collision_spawner/obj_tilemap_collision_spawner.yy",},"order":0,},
+    {"id":{"name":"spr_goomba","path":"sprites/spr_goomba/spr_goomba.yy",},"order":2,},
     {"id":{"name":"edge_get_location","path":"scripts/edge_get_location/edge_get_location.yy",},"order":0,},
     {"id":{"name":"obj_cam_position","path":"objects/obj_cam_position/obj_cam_position.yy",},"order":0,},
     {"id":{"name":"physics_gravity","path":"scripts/physics_gravity/physics_gravity.yy",},"order":1,},
@@ -29,6 +30,7 @@
     {"id":{"name":"input_check_pressed","path":"scripts/input_check_pressed/input_check_pressed.yy",},"order":5,},
     {"id":{"name":"JordanTestRoom","path":"rooms/JordanTestRoom/JordanTestRoom.yy",},"order":1,},
     {"id":{"name":"collision_check","path":"scripts/collision_check/collision_check.yy",},"order":6,},
+    {"id":{"name":"obj_goomba","path":"objects/obj_goomba/obj_goomba.yy",},"order":0,},
     {"id":{"name":"spr_frog_lick","path":"sprites/spr_frog_lick/spr_frog_lick.yy",},"order":9,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":5,},
     {"id":{"name":"spr_egg_damaged","path":"sprites/spr_egg_damaged/spr_egg_damaged.yy",},"order":3,},
@@ -130,6 +132,7 @@
     {"folderPath":"folders/Objects/Camera.yy","order":5,"resourceVersion":"1.0","name":"Camera","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Game_Manager_Helpers.yy","order":9,"resourceVersion":"1.0","name":"Game_Manager_Helpers","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Draws.yy","order":10,"resourceVersion":"1.0","name":"Draws","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Enemies.yy","order":6,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
