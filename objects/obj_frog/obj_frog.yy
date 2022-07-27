@@ -5,7 +5,6 @@
   },
   "solid": false,
   "visible": true,
-  "managed": true,
   "spriteMaskId": {
     "name": "spr_frog_idle_collision",
     "path": "sprites/spr_frog_idle_collision/spr_frog_idle_collision.yy",

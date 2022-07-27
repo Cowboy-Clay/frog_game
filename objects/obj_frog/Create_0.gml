@@ -2,8 +2,8 @@
 
 collision_mask = [obj_tile_collision, obj_goomba];
 
-walk_acceleration = 2;
-walk_speed_max = 2;
+walk_acceleration = 1;
+walk_speed_max = 1.5;
 
 // Jump stuff
 jump_timer = 0; // Frame counter to determine how long the player is preparing their jump
@@ -17,19 +17,20 @@ jump_timer = 0; // Frame counter to determine how long the player is preparing t
 
 // Tongue stuff
 tongue_reticle_angle = 0;
-#macro player_tongue_angle_acceloration -4.9
+tongue_ready = true;
+#macro player_tongue_angle_acceloration -10
 #macro player_tongue_reticle spr_placeholder_reticle
 #macro player_tongue_offset_x 10
 #macro player_tongue_offset_y 6
-#macro player_tongue_angle_min -88
-#macro player_tongue_angle_max 88
+#macro player_tongue_angle_min -42
+#macro player_tongue_angle_max -42
 #macro player_tongue_reticle_lerp_value 0.3
 
 #macro player_tongue_sprite spr_frog_tongue
-#macro player_tongue_length_max 100
-#macro player_tongue_frames_extend 18
+#macro player_tongue_length_max 130
+#macro player_tongue_frames_extend 20
 #macro player_tongue_frames_retract 6
-#macro player_tongue_force 4
+#macro player_tongue_force 5.5
 tongue_timer = 0;
 
 // Set default animation
@@ -143,8 +144,9 @@ function tongue_aim() {
 }
 
 function tongue_fire() {
-	if tongue_timer == 0 and input_check_released(input_action.attack) {
+	if tongue_timer == 0 and input_check_released(input_action.attack) && tongue_ready{
 		tongue_timer = 1;
+		tongue_ready = false;
 		if vspeed > 0 {vspeed = 0;physics_gravity(0.1,1);}
 	}
 	if tongue_timer > 0 {
@@ -177,7 +179,7 @@ function tongue_fire() {
 }
 
 function tongue_get_length() {
-	var p = 1/1.;
+	var p = 1/4;
 	if tongue_timer == 0 return 0;
 	else if tongue_timer > 0 and tongue_timer < player_tongue_frames_extend {
 		var l = power(tongue_timer, p) * player_tongue_length_max / power(player_tongue_frames_extend, p);
