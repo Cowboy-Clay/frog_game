@@ -156,7 +156,8 @@ function tongue_fire() {
 	if tongue_timer > 0 {
 		var xx = x + (image_xscale * player_tongue_offset_x);
 		var yy = y + (image_yscale * player_tongue_offset_y);
-		var l = tongue_get_length();
+		var l = tongue_get_length() - 5;
+		l = l < 0 ? 0 : l;
 		var a = tongue_reticle_angle;
 		if image_xscale < 0 {
 			if a == 0 a = 180;
@@ -165,7 +166,7 @@ function tongue_fire() {
 		}
 		var dx = cos(a * pi / 180) * l;
 		var dy = sin(a * pi / 180) * l;
-		if collision_circle(xx+dx, yy+dy, 5, obj_tile_collision, true, true){
+		if collision_circle(xx+dx, yy+dy, 5, obj_tile_collision, true, true) and tongue_timer <= player_tongue_frames_extend{
 			var col_length = tongue_get_length();
 			tongue_timer ++;
 			while tongue_get_length() > col_length {
