@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_tile_coll",
-    "path": "sprites/spr_tile_coll/spr_tile_coll.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": false,
   "spriteMaskId": null,
