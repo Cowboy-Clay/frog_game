@@ -37,6 +37,7 @@
     {"id":{"name":"obj_cam_bound","path":"objects/obj_cam_bound/obj_cam_bound.yy",},"order":2,},
     {"id":{"name":"input_set_bind","path":"scripts/input_set_bind/input_set_bind.yy",},"order":10,},
     {"id":{"name":"input_check_pressed_any","path":"scripts/input_check_pressed_any/input_check_pressed_any.yy",},"order":6,},
+    {"id":{"name":"JordanTestRoom1","path":"rooms/JordanTestRoom1/JordanTestRoom1.yy",},"order":2,},
     {"id":{"name":"spr_frog_jump","path":"sprites/spr_frog_jump/spr_frog_jump.yy",},"order":3,},
     {"id":{"name":"obj_cam_anchor","path":"objects/obj_cam_anchor/obj_cam_anchor.yy",},"order":1,},
     {"id":{"name":"spr_egg","path":"sprites/spr_egg/spr_egg.yy",},"order":2,},
@@ -102,6 +103,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"JordanTestRoom","path":"rooms/JordanTestRoom/JordanTestRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"JordanTestRoom1","path":"rooms/JordanTestRoom1/JordanTestRoom1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
