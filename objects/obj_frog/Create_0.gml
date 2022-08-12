@@ -37,7 +37,7 @@ tongue_timer = 0;
 animation_set(global.animation_frog_idle);
 
 function walk() {
-	if jump_timer > 0 return;
+	if jump_timer > 0 or tongue_timer > 0 return;
 	if variable_instance_exists(id, "grounded") == false {
 		grounded = collision_check_edge(x, y, mask_index, directions.down, collision_mask); 
 	}
