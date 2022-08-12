@@ -166,7 +166,22 @@ function tongue_fire() {
 		}
 		var dx = cos(a * pi / 180) * l;
 		var dy = sin(a * pi / 180) * l;
-		if collision_circle(xx+dx, yy+dy, 5, obj_tile_collision, true, true) and tongue_timer <= player_tongue_frames_extend{
+		if collision_circle(xx+dx, yy+dy, 10, obj_fly, true, true) and tongue_timer <= player_tongue_frames_extend {
+			var col_length = tongue_get_length();
+			tongue_timer ++;
+			while tongue_get_length() > col_length {
+				tongue_timer ++;
+			}
+			hspeed = image_xscale > 0 ? cos(a * pi / 180) * player_tongue_force : cos(a * pi / 180) * player_tongue_force;
+			vspeed = sin(a * pi / 180) * player_tongue_force;
+			
+			tongue_ready = true;
+			
+			var f = instance_nearest(xx+dx, yy+dy, obj_fly);
+			f.fly_get_eaten();
+			return;
+			
+		} else if collision_circle(xx+dx, yy+dy, 5, obj_tile_collision, true, true) and tongue_timer <= player_tongue_frames_extend{
 			var col_length = tongue_get_length();
 			tongue_timer ++;
 			while tongue_get_length() > col_length {

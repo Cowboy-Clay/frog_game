@@ -5,6 +5,7 @@
     {"id":{"name":"action_walk","path":"scripts/action_walk/action_walk.yy",},"order":7,},
     {"id":{"name":"obj_tilemap_collision_spawner","path":"objects/obj_tilemap_collision_spawner/obj_tilemap_collision_spawner.yy",},"order":0,},
     {"id":{"name":"spr_goomba","path":"sprites/spr_goomba/spr_goomba.yy",},"order":2,},
+    {"id":{"name":"obj_fly","path":"objects/obj_fly/obj_fly.yy",},"order":1,},
     {"id":{"name":"edge_get_location","path":"scripts/edge_get_location/edge_get_location.yy",},"order":0,},
     {"id":{"name":"obj_cam_position","path":"objects/obj_cam_position/obj_cam_position.yy",},"order":0,},
     {"id":{"name":"physics_gravity","path":"scripts/physics_gravity/physics_gravity.yy",},"order":1,},
@@ -103,8 +104,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"JordanTestRoom2","path":"rooms/JordanTestRoom2/JordanTestRoom2.yy",},},
     {"roomId":{"name":"mpt_test_room","path":"rooms/mpt_test_room/mpt_test_room.yy",},},
+    {"roomId":{"name":"JordanTestRoom2","path":"rooms/JordanTestRoom2/JordanTestRoom2.yy",},},
     {"roomId":{"name":"JordanTestRoom","path":"rooms/JordanTestRoom/JordanTestRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"JordanTestRoom1","path":"rooms/JordanTestRoom1/JordanTestRoom1.yy",},},
