@@ -13,7 +13,7 @@ physics_friction(grounded ? .5 : 0);
 if grounded walk_apply_limit();
 
 
-if grounded && tongue_ready == false {
+if grounded && tongue_ready == false and tongue_timer == 0 {
 	tongue_ready = true;
 }
 
