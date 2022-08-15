@@ -14,6 +14,16 @@ global.egg_statuses = [egg_status.missing,
 					   egg_status.missing,
 					   egg_status.missing,
 					   egg_status.missing];
+					   
+function egg_collect(){
+	for (var i = 0 ; i < 5 ; i++) {
+		if global.egg_statuses[i] == egg_status.missing {
+			global.egg_statuses[i] = egg_status.healthy;
+			return true;
+		}
+	}
+	return false;
+}
 #endregion
 
 #region Debugging
