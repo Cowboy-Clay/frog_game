@@ -41,7 +41,7 @@ function walk() {
 	if variable_instance_exists(id, "grounded") == false {
 		grounded = collision_check_edge(x, y, mask_index, directions.down, collision_mask); 
 	}
-	if !grounded return;
+	if !grounded and not place_meeting(x,y,obj_water) return;
 	if input_check(input_action.left) && !input_check(input_action.right){
 		hspeed -= walk_acceleration;
 		image_xscale = -1;
@@ -97,15 +97,16 @@ function GoToPlayerJumpAnti()
 {
 	if jump_timer >= 0 jump_timer = -1 * jump_buffer_length;
 	else jump_timer ++;
-	if jump_timer < 0 && grounded jump_timer = 1;
+	if jump_timer < 0 && (grounded or place_meeting(x,y,obj_water)) jump_timer = 1;
 	show_debug_message(jump_timer);
 }
 function GoToPlayerJump()
 {
-	if !grounded return;
+	if !grounded and not place_meeting(x,y,obj_water) return;
     var l = jump_timer - player_jump_windup_min;
     l = l / (player_jump_windup_max - player_jump_windup_min);
-    vspeed -= lerp(player_jump_force_vertical_min, player_jump_force_vertical_max, l);
+    if place_meeting(x,y,obj_water) vspeed = 0;
+	vspeed -= lerp(player_jump_force_vertical_min, player_jump_force_vertical_max, l);
     if input_check(input_action.right) && !input_check(input_action.left)
     {
         hspeed = lerp(player_jump_force_horizontal_min, player_jump_force_horizontal_max , l);
@@ -118,7 +119,7 @@ function GoToPlayerJump()
 }
 function PlayerJumpAnti()
 {
-	if !grounded {
+	if !grounded and not place_meeting(x,y,obj_water) {
 		jump_timer = 0;
 		return;
 	}
