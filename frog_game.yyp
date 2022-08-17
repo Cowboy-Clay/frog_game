@@ -75,6 +75,7 @@
     {"id":{"name":"obj_get_corner","path":"scripts/obj_get_corner/obj_get_corner.yy",},"order":0,},
     {"id":{"name":"spr_tile_collision","path":"sprites/spr_tile_collision/spr_tile_collision.yy",},"order":4,},
     {"id":{"name":"animation_set","path":"scripts/animation_set/animation_set.yy",},"order":2,},
+    {"id":{"name":"spr_eggCollectible","path":"sprites/spr_eggCollectible/spr_eggCollectible.yy",},"order":4,},
     {"id":{"name":"spr_tile_coll","path":"sprites/spr_tile_coll/spr_tile_coll.yy",},"order":5,},
     {"id":{"name":"frog_animations","path":"scripts/frog_animations/frog_animations.yy",},"order":0,},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"order":1,},
