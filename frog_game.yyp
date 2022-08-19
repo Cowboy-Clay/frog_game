@@ -86,6 +86,7 @@
     {"id":{"name":"spr_frog_idle","path":"sprites/spr_frog_idle/spr_frog_idle.yy",},"order":7,},
     {"id":{"name":"animation_play","path":"scripts/animation_play/animation_play.yy",},"order":0,},
     {"id":{"name":"constants","path":"scripts/constants/constants.yy",},"order":5,},
+    {"id":{"name":"spr_frog_swim","path":"sprites/spr_frog_swim/spr_frog_swim.yy",},"order":11,},
     {"id":{"name":"obj_tile_collision","path":"objects/obj_tile_collision/obj_tile_collision.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
