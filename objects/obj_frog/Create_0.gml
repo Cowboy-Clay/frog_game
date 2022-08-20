@@ -33,6 +33,9 @@ tongue_ready = true;
 #macro player_tongue_force 5.5
 tongue_timer = 0;
 
+// Water stuff
+underwater = false;
+
 // Set default animation
 animation_set(global.animation_frog_idle);
 
@@ -52,8 +55,14 @@ function walk() {
 }
 
 function walk_apply_limit() {
-	if abs(hspeed) > walk_speed_max {
+	if abs(hspeed) > walk_speed_max and grounded {
 		hspeed = sign(hspeed) * walk_speed_max;
+	} else if abs(hspeed) > walk_speed_max * 3 and place_meeting(x,y,obj_water) {
+		hspeed = sign(hspeed) * walk_speed_max * 3;
+	}
+	
+	if underwater and abs(vspeed) > 4 {
+		vspeed = sign(vspeed) * 4;
 	}
 }
 
@@ -211,4 +220,13 @@ function tongue_get_length() {
 		return l;
 	}
 	return 0;
+}
+
+function underwater_update() {
+	var last = underwater;
+	underwater = place_meeting(x,y,obj_water);
+	
+	if underwater and not last and vspeed > 0{
+		vspeed *= 0.2;
+	}
 }
