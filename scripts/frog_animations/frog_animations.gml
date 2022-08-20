@@ -23,3 +23,6 @@ global.animation_frog_lick = [spr_frog_lick, animation_type.hold, 10];
 
 //LICK FALL
 global.animation_frog_lickFall = [spr_frog_lickFall, animation_type.hold, 10];
+
+//SWIM
+global.animation_frog_swim = [spr_frog_swim, animation_type.hold, 8];
