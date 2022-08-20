@@ -82,6 +82,14 @@ function animation_select() {
 		}
 		animation_set(global.animation_frog_idle);
 		return;
+	} else if not grounded and underwater and jump_timer > 0 {
+		animation_set(global.animation_frog_swim);
+		return;
+	}
+	
+	if not grounded and underwater and vspeed < 0 {
+		animation_set(global.animation_frog_jump_underwater);
+		return;
 	}
 	
 	if vspeed < 0 {
