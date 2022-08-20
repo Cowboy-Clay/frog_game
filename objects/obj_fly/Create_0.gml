@@ -8,4 +8,4 @@ function fly_get_eaten() {
 	respawn_timer = respawn_time;
 }
 
-path_start(Path1, .5, path_action_continue,false);
+path_start(path_fly_idle, .5, path_action_continue,false);

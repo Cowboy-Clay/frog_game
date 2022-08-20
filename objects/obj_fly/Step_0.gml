@@ -5,6 +5,6 @@ if respawn_timer > 0 {
 	}
 }
 
-path_speed += random(1) > 0.5 ? 0.25 : -0.25;
-if path_speed < .5 path_speed = 0.5;
-if path_speed > 2 path_speed = 2;
+path_speed += random(1) > 0.5 ? 0.1 : -0.1;
+if path_speed < .1 path_speed = 0.1;
+if path_speed > 1 path_speed = 1;
