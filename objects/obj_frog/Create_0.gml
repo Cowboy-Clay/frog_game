@@ -15,8 +15,6 @@ jump_timer = 0; // Frame counter to determine how long the player is preparing t
 #macro player_jump_force_horizontal_max 4
 #macro jump_buffer_length 13
 
-wall_bouncy_factor = 0.3;
-
 // Tongue stuff
 tongue_reticle_angle = 0;
 tongue_ready = true;
@@ -90,10 +88,6 @@ function animation_select() {
 	}
 	
 	if not grounded and underwater and vspeed < 0 {
-		if tongue_timer > 0 {
-			animation_set(global.animation_frog_lickFall);
-			return;
-		}
 		animation_set(global.animation_frog_jump_underwater);
 		return;
 	}
@@ -141,7 +135,7 @@ function GoToPlayerJump()
 	
 	// Bounce immediately if touching wall 
 	if (hspeed < 0 and collision_check_edge(x,y,mask_index,directions.left,collision_mask)) or (hspeed > 0 and collision_check_edge(x,y,mask_index,directions.right,collision_mask)) {
-		hspeed *= -wall_bouncy_factor;
+		hspeed *= -1;
 	}
 	
 	jump_timer = 0;

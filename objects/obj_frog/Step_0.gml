@@ -25,7 +25,7 @@ else {
 if grounded or place_meeting(x,y, obj_water) walk_apply_limit();
 
 
-if (grounded or underwater) && tongue_ready == false and tongue_timer == 0 {
+if grounded && tongue_ready == false and tongue_timer == 0 {
 	tongue_ready = true;
 }
 
