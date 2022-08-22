@@ -132,6 +132,12 @@ function GoToPlayerJump()
     {
         hspeed = -lerp(player_jump_force_horizontal_min, player_jump_force_horizontal_max, l);
     }
+	
+	// Bounce immediately if touching wall 
+	if (hspeed < 0 and collision_check_edge(x,y,mask_index,directions.left,collision_mask)) or (hspeed > 0 and collision_check_edge(x,y,mask_index,directions.right,collision_mask)) {
+		hspeed *= -1;
+	}
+	
 	jump_timer = 0;
 }
 function PlayerJumpAnti()
