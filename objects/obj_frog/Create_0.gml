@@ -90,6 +90,10 @@ function animation_select() {
 	}
 	
 	if not grounded and underwater and vspeed < 0 {
+		if tongue_timer > 0 {
+			animation_set(global.animation_frog_lickFall);
+			return;
+		}
 		animation_set(global.animation_frog_jump_underwater);
 		return;
 	}
