@@ -30,9 +30,6 @@
     {"compositeImage":{"FrameId":{"name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":{"name":"66b65697-66c4-425b-afb4-f7f8d5c5355a","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c9c79b61-4514-4d74-a9d3-fa0c59261ee8","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c9c79b61-4514-4d74-a9d3-fa0c59261ee8","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":{"name":"66b65697-66c4-425b-afb4-f7f8d5c5355a","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"c9c79b61-4514-4d74-a9d3-fa0c59261ee8","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},
@@ -42,15 +39,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "length": 2.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"dbcde685-523b-4ccd-a861-f1f864c9d94a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ac25858f-6bb5-4a89-9faf-5b0f7802e904","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"babc083b-eb7f-4786-b25e-97b51923fec6","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"dfa395d1-f80c-4b9d-9fe6-32b9153fb9bf","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9c79b61-4514-4d74-a9d3-fa0c59261ee8","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+            {"id":"dbcde685-523b-4ccd-a861-f1f864c9d94a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ac25858f-6bb5-4a89-9faf-5b0f7802e904","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"babc083b-eb7f-4786-b25e-97b51923fec6","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
