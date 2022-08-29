@@ -11,14 +11,14 @@
     "name": "frog_sounds",
     "path": "audiogroups/frog_sounds",
   },
-  "soundFile": "sfx_frogjump.ogg",
-  "duration": 0.162834,
+  "soundFile": "sfx_skloop2.ogg",
+  "duration": 0.428571,
   "parent": {
     "name": "Frog",
     "path": "folders/Sounds/SFX/Frog.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfx_FrogJump",
+  "name": "sfx_skloop2",
   "tags": [],
   "resourceType": "GMSound",
 }

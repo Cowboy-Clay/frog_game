@@ -7,3 +7,5 @@
 
 #macro sfx_frog_tongue_0 sfx_TongueBleh1
 #macro sfx_frog_tongue_1 sfx_TongueBleh2
+
+#macro sfx_frog_splash sfx_skloop2
