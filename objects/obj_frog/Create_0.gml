@@ -35,14 +35,17 @@ tongue_timer = 0;
 
 // Water stuff
 underwater = false;
+grounded = false;
 
 // Set default animation
 animation_set(global.animation_frog_idle);
 
+audio_group_load(frog_sounds);
+
 function walk() {
 	if jump_timer > 0 or tongue_timer > 0 return;
 	if variable_instance_exists(id, "grounded") == false {
-		grounded = collision_check_edge(x, y, mask_index, directions.down, collision_mask); 
+		//grounded = collision_check_edge(x, y, mask_index, directions.down, collision_mask); 
 	}
 	if !grounded and not place_meeting(x,y,obj_water) return;
 	if input_check(input_action.left) && !input_check(input_action.right){
@@ -124,6 +127,11 @@ function GoToPlayerJump()
     l = l / (player_jump_windup_max - player_jump_windup_min);
     if place_meeting(x,y,obj_water) vspeed = 0;
 	vspeed -= lerp(player_jump_force_vertical_min, player_jump_force_vertical_max, l);
+	if underwater {
+		audio_play_sound(sfx_frog_swim, 50, false);
+	} else {
+		audio_play_sound(l > 0.6 ? sfx_frog_jump_high : sfx_frog_jump_low, 50, false);
+	}
     if input_check(input_action.right) && !input_check(input_action.left)
     {
         hspeed = lerp(player_jump_force_horizontal_min, player_jump_force_horizontal_max , l);
@@ -139,6 +147,7 @@ function GoToPlayerJump()
 	}
 	
 	jump_timer = 0;
+	
 }
 function PlayerJumpAnti()
 {
@@ -175,6 +184,7 @@ function tongue_fire() {
 	if tongue_timer == 0 and input_check_pressed(input_action.attack) && tongue_ready{
 		tongue_timer = 1;
 		tongue_ready = false;
+		audio_play_random_tongue_sound();
 		if vspeed > 0 {vspeed = 0;physics_gravity(0.1,1);}
 	}
 	if tongue_timer > 0 {
@@ -242,5 +252,12 @@ function underwater_update() {
 	
 	if underwater and not last and vspeed > 0{
 		vspeed *= 0.2;
+		audio_play_sound(sfx_frog_splash,50,false);
 	}
+}
+
+function audio_play_random_tongue_sound() {
+	var r = random(50);
+	if r <= 25 audio_play_sound(sfx_frog_tongue_0,50,false);
+	else if r <= 50 audio_play_sound(sfx_frog_tongue_1,50,false);
 }
