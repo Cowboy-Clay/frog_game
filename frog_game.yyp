@@ -34,6 +34,7 @@
     {"id":{"name":"spr_frog_falling","path":"sprites/spr_frog_falling/spr_frog_falling.yy",},"order":0,},
     {"id":{"name":"input_check_pressed","path":"scripts/input_check_pressed/input_check_pressed.yy",},"order":5,},
     {"id":{"name":"sfx_skloop3","path":"sounds/sfx_skloop3/sfx_skloop3.yy",},"order":8,},
+    {"id":{"name":"obj_tilemap_procedural","path":"objects/obj_tilemap_procedural/obj_tilemap_procedural.yy",},"order":1,},
     {"id":{"name":"JordanTestRoom","path":"rooms/JordanTestRoom/JordanTestRoom.yy",},"order":1,},
     {"id":{"name":"collision_check","path":"scripts/collision_check/collision_check.yy",},"order":6,},
     {"id":{"name":"obj_goomba","path":"objects/obj_goomba/obj_goomba.yy",},"order":0,},
