@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"ac25858f-6bb5-4a89-9faf-5b0f7802e904","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ac25858f-6bb5-4a89-9faf-5b0f7802e904","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":{"name":"66b65697-66c4-425b-afb4-f7f8d5c5355a","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"ac25858f-6bb5-4a89-9faf-5b0f7802e904","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":{"name":"66b65697-66c4-425b-afb4-f7f8d5c5355a","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eaab953d-5608-4803-b3bd-d04bd2a7a913","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eaab953d-5608-4803-b3bd-d04bd2a7a913","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":{"name":"f23189c4-ea5b-4522-98ab-6f027342011e","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"eaab953d-5608-4803-b3bd-d04bd2a7a913","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b7cf0151-671b-4238-beb8-ad51163d4066","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b7cf0151-671b-4238-beb8-ad51163d4066","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"LayerId":{"name":"f23189c4-ea5b-4522-98ab-6f027342011e","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","name":"b7cf0151-671b-4238-beb8-ad51163d4066","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_frog_jump_underwater","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"dbcde685-523b-4ccd-a861-f1f864c9d94a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ac25858f-6bb5-4a89-9faf-5b0f7802e904","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"babc083b-eb7f-4786-b25e-97b51923fec6","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7118ae6c-70d7-4540-a34e-45dbc2bf5fee","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a79a847c-172e-4acb-8952-b4db58e08ab2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eaab953d-5608-4803-b3bd-d04bd2a7a913","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"373481eb-85cf-4874-903b-7025ebd09ec2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7cf0151-671b-4238-beb8-ad51163d4066","path":"sprites/spr_frog_jump_underwater/spr_frog_jump_underwater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -69,7 +69,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"66b65697-66c4-425b-afb4-f7f8d5c5355a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f23189c4-ea5b-4522-98ab-6f027342011e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
