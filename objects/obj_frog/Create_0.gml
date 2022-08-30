@@ -15,6 +15,8 @@ jump_timer = 0; // Frame counter to determine how long the player is preparing t
 #macro player_jump_force_horizontal_max 4
 #macro jump_buffer_length 13
 
+wall_bouncy_factor = 0.3;
+
 // Tongue stuff
 tongue_reticle_angle = 0;
 tongue_ready = true;
