@@ -258,6 +258,7 @@ function underwater_update() {
 	
 	if underwater and not last and vspeed > 0{
 		vspeed *= 0.2;
+		audio_play_sound(sfx_frog_splash,50,false);
 	}
 }
 
