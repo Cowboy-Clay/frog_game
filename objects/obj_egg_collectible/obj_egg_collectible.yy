@@ -1,11 +1,10 @@
 {
   "spriteId": {
-    "name": "spr_egg",
-    "path": "sprites/spr_egg/spr_egg.yy",
+    "name": "spr_eggCollectible",
+    "path": "sprites/spr_eggCollectible/spr_eggCollectible.yy",
   },
   "solid": false,
   "visible": true,
-  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

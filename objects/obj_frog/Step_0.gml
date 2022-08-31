@@ -1,16 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+walk();
+underwater_update();
+
+// Tongue shooting physics
 if (tongue_timer > 0 and tongue_timer < player_tongue_frames_extend){
 	physics_gravity(0.1,1);
-}else {
+	physics_friction(grounded ? .5 : 0);
+}
+// Water physics
+else if place_meeting(x,y, obj_water) {
+	physics_gravity(0.05, 0.1);
+	physics_friction(grounded ? 0.99 : .9);
+}
+// Standard physics
+else {
 	physics_gravity(0.2,10);
+	physics_friction(grounded ? .5 : 0);
 }
 
 
-walk();
-physics_friction(grounded ? .5 : 0);
-if grounded walk_apply_limit();
+if grounded or place_meeting(x,y, obj_water) walk_apply_limit();
 
 
 if grounded && tongue_ready == false and tongue_timer == 0 {

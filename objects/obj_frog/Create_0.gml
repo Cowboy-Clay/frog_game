@@ -15,6 +15,8 @@ jump_timer = 0; // Frame counter to determine how long the player is preparing t
 #macro player_jump_force_horizontal_max 4
 #macro jump_buffer_length 13
 
+wall_bouncy_factor = 0.3;
+
 // Tongue stuff
 tongue_reticle_angle = 0;
 tongue_ready = true;
@@ -33,15 +35,21 @@ tongue_ready = true;
 #macro player_tongue_force 5.5
 tongue_timer = 0;
 
+// Water stuff
+underwater = false;
+grounded = false;
+
 // Set default animation
 animation_set(global.animation_frog_idle);
+
+audio_group_load(frog_sounds);
 
 function walk() {
 	if jump_timer > 0 or tongue_timer > 0 return;
 	if variable_instance_exists(id, "grounded") == false {
-		grounded = collision_check_edge(x, y, mask_index, directions.down, collision_mask); 
+		//grounded = collision_check_edge(x, y, mask_index, directions.down, collision_mask); 
 	}
-	if !grounded return;
+	if !grounded and not place_meeting(x,y,obj_water) return;
 	if input_check(input_action.left) && !input_check(input_action.right){
 		hspeed -= walk_acceleration;
 		image_xscale = -1;
@@ -52,8 +60,14 @@ function walk() {
 }
 
 function walk_apply_limit() {
-	if abs(hspeed) > walk_speed_max {
+	if abs(hspeed) > walk_speed_max and grounded {
 		hspeed = sign(hspeed) * walk_speed_max;
+	} else if abs(hspeed) > walk_speed_max * 3 and place_meeting(x,y,obj_water) {
+		hspeed = sign(hspeed) * walk_speed_max * 3;
+	}
+	
+	if underwater and abs(vspeed) > 4 {
+		vspeed = sign(vspeed) * 4;
 	}
 }
 
@@ -72,6 +86,14 @@ function animation_select() {
 			return;
 		}
 		animation_set(global.animation_frog_idle);
+		return;
+	} else if not grounded and underwater and jump_timer > 0 {
+		animation_set(global.animation_frog_swim);
+		return;
+	}
+	
+	if not grounded and underwater and vspeed < 0 {
+		animation_set(global.animation_frog_jump_underwater);
 		return;
 	}
 	
@@ -97,15 +119,21 @@ function GoToPlayerJumpAnti()
 {
 	if jump_timer >= 0 jump_timer = -1 * jump_buffer_length;
 	else jump_timer ++;
-	if jump_timer < 0 && grounded jump_timer = 1;
+	if jump_timer < 0 && (grounded or place_meeting(x,y,obj_water)) jump_timer = 1;
 	show_debug_message(jump_timer);
 }
 function GoToPlayerJump()
 {
-	if !grounded return;
+	if !grounded and not place_meeting(x,y,obj_water) return;
     var l = jump_timer - player_jump_windup_min;
     l = l / (player_jump_windup_max - player_jump_windup_min);
-    vspeed -= lerp(player_jump_force_vertical_min, player_jump_force_vertical_max, l);
+    if place_meeting(x,y,obj_water) vspeed = 0;
+	vspeed -= lerp(player_jump_force_vertical_min, player_jump_force_vertical_max, l);
+	if underwater {
+		audio_play_sound(sfx_frog_swim, 50, false);
+	} else {
+		audio_play_sound(l > 0.6 ? sfx_frog_jump_high : sfx_frog_jump_low, 50, false);
+	}
     if input_check(input_action.right) && !input_check(input_action.left)
     {
         hspeed = lerp(player_jump_force_horizontal_min, player_jump_force_horizontal_max , l);
@@ -114,11 +142,18 @@ function GoToPlayerJump()
     {
         hspeed = -lerp(player_jump_force_horizontal_min, player_jump_force_horizontal_max, l);
     }
+	
+	// Bounce immediately if touching wall 
+	if (hspeed < 0 and collision_check_edge(x,y,mask_index,directions.left,collision_mask)) or (hspeed > 0 and collision_check_edge(x,y,mask_index,directions.right,collision_mask)) {
+		hspeed *= -1;
+	}
+	
 	jump_timer = 0;
+	
 }
 function PlayerJumpAnti()
 {
-	if !grounded {
+	if !grounded and not place_meeting(x,y,obj_water) {
 		jump_timer = 0;
 		return;
 	}
@@ -151,6 +186,7 @@ function tongue_fire() {
 	if tongue_timer == 0 and input_check_pressed(input_action.attack) && tongue_ready{
 		tongue_timer = 1;
 		tongue_ready = false;
+		audio_play_random_tongue_sound();
 		if vspeed > 0 {vspeed = 0;physics_gravity(0.1,1);}
 	}
 	if tongue_timer > 0 {
@@ -210,4 +246,20 @@ function tongue_get_length() {
 		return l;
 	}
 	return 0;
+}
+
+function underwater_update() {
+	var last = underwater;
+	underwater = place_meeting(x,y,obj_water);
+	
+	if underwater and not last and vspeed > 0{
+		vspeed *= 0.2;
+		audio_play_sound(sfx_frog_splash,50,false);
+	}
+}
+
+function audio_play_random_tongue_sound() {
+	var r = random(50);
+	if r <= 25 audio_play_sound(sfx_frog_tongue_0,50,false);
+	else if r <= 50 audio_play_sound(sfx_frog_tongue_1,50,false);
 }

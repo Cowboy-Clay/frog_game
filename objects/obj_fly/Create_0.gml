@@ -7,3 +7,5 @@ function fly_get_eaten() {
 	sprite_index = noone;
 	respawn_timer = respawn_time;
 }
+
+path_start(path_fly_idle, .5, path_action_continue,false);
