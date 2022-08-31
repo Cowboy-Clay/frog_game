@@ -7,8 +7,8 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": {
-    "name": "spr_frog_idle_collision",
-    "path": "sprites/spr_frog_idle_collision/spr_frog_idle_collision.yy",
+    "name": "spr_frog_idle_collision_skinny",
+    "path": "sprites/spr_frog_idle_collision_skinny/spr_frog_idle_collision_skinny.yy",
   },
   "persistent": false,
   "parentObjectId": null,
