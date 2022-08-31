@@ -96,6 +96,7 @@
     {"id":{"name":"spr_eggCollectible","path":"sprites/spr_eggCollectible/spr_eggCollectible.yy",},"order":4,},
     {"id":{"name":"spr_tile_coll","path":"sprites/spr_tile_coll/spr_tile_coll.yy",},"order":5,},
     {"id":{"name":"frog_animations","path":"scripts/frog_animations/frog_animations.yy",},"order":0,},
+    {"id":{"name":"lvl1_1","path":"rooms/lvl1_1/lvl1_1.yy",},"order":5,},
     {"id":{"name":"spr_pinkFrog","path":"sprites/spr_pinkFrog/spr_pinkFrog.yy",},"order":2,},
     {"id":{"name":"spr_placeholder_water","path":"sprites/spr_placeholder_water/spr_placeholder_water.yy",},"order":3,},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"order":1,},
@@ -133,6 +134,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"JordanTestRoom1","path":"rooms/JordanTestRoom1/JordanTestRoom1.yy",},},
     {"roomId":{"name":"inter_1","path":"rooms/inter_1/inter_1.yy",},},
+    {"roomId":{"name":"lvl1_1","path":"rooms/lvl1_1/lvl1_1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
