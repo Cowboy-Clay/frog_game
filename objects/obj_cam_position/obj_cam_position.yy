@@ -1,7 +1,11 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_dot",
+    "path": "sprites/spr_dot/spr_dot.yy",
+  },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
