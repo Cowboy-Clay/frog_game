@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 28,
+  "gridY": 28,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"c9e10147-467f-4469-9472-fb12649d5614","path":"sprites/tlst_swamp/tlst_swamp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"c9e10147-467f-4469-9472-fb12649d5614","path":"sprites/tlst_swamp/tlst_swamp.yy",},"LayerId":{"name":"75c2c6f7-b36f-4da7-9dcf-6e1fbffb75c4","path":"sprites/tlst_swamp/tlst_swamp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

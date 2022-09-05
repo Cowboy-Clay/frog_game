@@ -5,7 +5,10 @@
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_eggCollectibleCollision",
+    "path": "sprites/spr_eggCollectibleCollision/spr_eggCollectibleCollision.yy",
+  },
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
