@@ -76,6 +76,7 @@
     {"id":{"name":"spr_wall_1","path":"sprites/spr_wall_1/spr_wall_1.yy",},"order":6,},
     {"id":{"name":"spr_placeholder_frog","path":"sprites/spr_placeholder_frog/spr_placeholder_frog.yy",},"order":0,},
     {"id":{"name":"collision_check_edge","path":"scripts/collision_check_edge/collision_check_edge.yy",},"order":3,},
+    {"id":{"name":"spr_dot","path":"sprites/spr_dot/spr_dot.yy",},"order":3,},
     {"id":{"name":"vector_away_normal","path":"scripts/vector_away_normal/vector_away_normal.yy",},"order":3,},
     {"id":{"name":"input_set_binds_keyboard","path":"scripts/input_set_binds_keyboard/input_set_binds_keyboard.yy",},"order":12,},
     {"id":{"name":"enums","path":"scripts/enums/enums.yy",},"order":3,},
