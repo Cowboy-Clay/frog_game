@@ -46,6 +46,7 @@
     {"id":{"name":"obj_egg_collectible","path":"objects/obj_egg_collectible/obj_egg_collectible.yy",},"order":7,},
     {"id":{"name":"spr_egg_damaged","path":"sprites/spr_egg_damaged/spr_egg_damaged.yy",},"order":3,},
     {"id":{"name":"obj_cam_bound","path":"objects/obj_cam_bound/obj_cam_bound.yy",},"order":2,},
+    {"id":{"name":"Small_Dirt_Tiles","path":"tilesets/Small_Dirt_Tiles/Small_Dirt_Tiles.yy",},"order":3,},
     {"id":{"name":"input_set_bind","path":"scripts/input_set_bind/input_set_bind.yy",},"order":10,},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"order":8,},
     {"id":{"name":"spr_blueFrog","path":"sprites/spr_blueFrog/spr_blueFrog.yy",},"order":1,},
